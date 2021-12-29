@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans",sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background: -webkit-linear-gradient(left, #E4AED8, #E5B6A1);
+	background-size: cover;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+header.sticky{
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header.sticky .logo{
+	color: #111;
+}
+
+header .logo{
+	color: #fff;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+header .logo span{
+	color: #FF6000;
+}
+
+header .navegador{
+	position: relative;
+	display: flex;
+}
+
+header .navegador li{
+	list-style: none;
+	margin-left: 30px;
+}
+
+header .navegador li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 450;
+}
+
+header.sticky .navegador li a{
+	color: #111;
+}
+
+.cabecera .navegador li a:hover{
+	color: #FF6000;
+}
+
+.container{
+	padding: 100px;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.encabezado{
+	padding: 20px;
+	width: 70%;
+	color: #fff;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+	border: 1px solid  rgba(255, 255, 255, 0.5);
+	border-right: 1px solid  rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
+	border-radius: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.encabezado p{
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+.encabezado .icono{
+	height: 50px;
+	width: 50px;
+}
+
+.caja{
+	width: 100%;
+}
+
+.container .caja .post{
+	margin-top: 40px;
+	padding: 20px;
+	width: 100%;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+	border: 1px solid  rgba(255, 255, 255, 0.5);
+	border-right: 1px solid  rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+}
+
+.container .caja .post .titulo{
+	margin-bottom: 10px;
+	font-size: 1.7em;
+	font-weight: 500;
+	color: #fff;
+}
+
+.container .caja .post .content{
+	color: #DEDEDE;
+	font-size: 1.3em;
+	font-weight: 400;
+
+}
+
+footer{
+	padding: 8px 40px;
+	border-top: 1px solid rgba(0,0,0,0.3);
+	text-align: center;
+}
+
+footer p{
+	color: #333;
+}
+
+footer span{
+	color: #FF6000;
+	font-weight: 700;
+	text-decoration: none;
+}
